@@ -1,0 +1,63 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes form {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 21rem);
+  }
+}
+
+@keyframes form-stop-scaling {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 210px);
+  }
+}
+
+@keyframes form-mobile-portrait {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 5rem);
+  }
+}
+
+@keyframes form-tablet {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 9rem);
+  }
+}

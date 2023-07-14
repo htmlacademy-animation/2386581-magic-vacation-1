@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .form__label {
@@ -34,7 +35,7 @@
   margin-right: 3rem;
   padding: 0 5.6rem;
   height: 6rem;
-  width: calc(100% - 21rem);
+  
   text-transform: uppercase;
   font: inherit;
   font-size: 2.4rem;
@@ -43,6 +44,8 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
+  animation: form .3s ease forwards;
+  width: calc(100% - 21rem);
 
   &:focus {
     border: 1px solid $c-purple;
@@ -55,6 +58,7 @@
     width: calc(100% - 210px);
     font-size: 24px;
     border-radius: 30px;
+    animation: form-stop-scaling .3s ease forwards;
   }
 
   @media (orientation: portrait) {
@@ -63,10 +67,12 @@
     width: calc(100% - 5rem);
     height: 4rem;
     font-size: 1.6rem;
+    animation: form-mobile-portrait .3s ease forwards;
   }
 
   @media (max-width: $tablet) and (orientation: landscape) {
     width: calc(100% - 9rem);
+    animation: form-tablet .3s ease forwards;
   }
 
   @media (max-width: $mobile) and (orientation: landscape) {
@@ -75,12 +81,11 @@
     width: calc(100% - 5rem);
     height: 4rem;
     font-size: 1.6rem;
+    animation: form-mobile-portrait .3s ease forwards;
   }
 }
 
 .form__button {
-  flex-grow: 1;
-
   @media (orientation: portrait) {
     position: relative;
     flex: none;

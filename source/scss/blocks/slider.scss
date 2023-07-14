@@ -18,7 +18,7 @@
   flex-direction: column;
   padding: 14.6rem 4rem 10rem 9.7rem;
   height: auto;
-
+  
   @media (min-width: $stop-scaling) {
     padding: 146px 40px 100px 97px;
   }
@@ -49,6 +49,8 @@
   &:nth-child(2) {
     .slider__item-text {
       margin-top: 7.8rem;
+      opacity: 0;
+      animation-delay: .3s;
 
       @media (min-width: $stop-scaling) {
         margin-top: 78px;
@@ -96,6 +98,8 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  animation: slide .3s ease forwards;
+
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;
