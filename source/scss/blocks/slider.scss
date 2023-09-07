@@ -98,7 +98,7 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
-  animation: slide .3s ease forwards;
+  animation: fade-in-x .3s ease forwards;
 
 
   @media (min-width: $stop-scaling) {
