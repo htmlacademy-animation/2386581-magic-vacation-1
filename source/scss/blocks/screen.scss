@@ -46,7 +46,7 @@
   color: $c-dark;
   background-color: $c-light;
   z-index: 1;
-  transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.61);
+  transition: transform $medium cubic-bezier(0, 0, 0.13, 0.61);
   transform: translateY(100%);
 
   body.loaded & {
