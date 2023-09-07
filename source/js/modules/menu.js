@@ -2,7 +2,6 @@ export default () => {
   let header = document.querySelector(`.js-header`);
   let menuToggler = document.querySelector(`.js-menu-toggler`);
   let menuLinks = document.querySelectorAll(`.js-menu-link`);
-  const socialBlockToggler = document.querySelector(`.social-block__toggler`);
 
   if (menuToggler) {
     menuToggler.addEventListener(`click`, function () {
@@ -24,12 +23,4 @@ export default () => {
       }
     });
   }
-
-  window.addEventListener(`load`, () => {
-    socialBlockToggler.classList.add(`start-appear`);
-    setTimeout(() => {
-      socialBlockToggler.classList.remove(`start-appear`);
-      socialBlockToggler.classList.add(`end-appear`);
-    }, 300);
-  });
 };
