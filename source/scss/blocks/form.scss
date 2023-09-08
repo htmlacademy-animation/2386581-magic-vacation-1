@@ -44,7 +44,7 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
-  animation: form .3s ease forwards;
+  animation: form $medium ease forwards;
   width: calc(100% - 21rem);
 
   &:focus {
@@ -58,7 +58,7 @@
     width: calc(100% - 210px);
     font-size: 24px;
     border-radius: 30px;
-    animation: form-stop-scaling .3s ease forwards;
+    animation: form-stop-scaling $medium ease forwards;
   }
 
   @media (orientation: portrait) {
@@ -67,12 +67,12 @@
     width: calc(100% - 5rem);
     height: 4rem;
     font-size: 1.6rem;
-    animation: form-mobile-portrait .3s ease forwards;
+    animation: form-mobile-portrait $medium ease forwards;
   }
 
   @media (max-width: $tablet) and (orientation: landscape) {
     width: calc(100% - 9rem);
-    animation: form-tablet .3s ease forwards;
+    animation: form-tablet $medium ease forwards;
   }
 
   @media (max-width: $mobile) and (orientation: landscape) {
@@ -81,7 +81,7 @@
     width: calc(100% - 5rem);
     height: 4rem;
     font-size: 1.6rem;
-    animation: form-mobile-portrait .3s ease forwards;
+    animation: form-mobile-portrait $medium ease forwards;
   }
 }
 
