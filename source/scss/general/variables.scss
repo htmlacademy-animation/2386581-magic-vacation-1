@@ -22,4 +22,9 @@ $index: 1.38871;
 
 
 $medium: 300ms;
-$screen-prize-change-timeout: 700ms;
+$medium2: 400ms;
+$long: 500ms;
+
+
+$animated-cubic-bezier: cubic-bezier(.6,-0.25,.41,1.76);
+$smooth-cubic-bezier: cubic-bezier(0.0, 0.0, 0.2, 1);
