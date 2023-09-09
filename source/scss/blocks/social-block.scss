@@ -57,7 +57,7 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
-    transition: width 0.4s cubic-bezier(.6,-0.25,.41,1.76), height 0.4s cubic-bezier(.6,-0.25,.41,1.76);
+    transition: width $medium2 $animated-cubic-bezier, height $medium2 $animated-cubic-bezier;
 
     body.loaded & {
       width: 100%;

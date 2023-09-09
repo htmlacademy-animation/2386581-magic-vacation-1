@@ -13,7 +13,7 @@
 @keyframes fade-in-x {
   0% {
     opacity: 0;
-    transform: translateX(30%);
+    transform: translateX(20%);
   }
 
   100% {
@@ -70,5 +70,35 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear-btn {
+  0% {
+    opacity: 1;
+    color: #5f458c00;
+    width: 6rem;
+  }
+
+  80% {
+    opacity: 1;
+    color: #5f458c00;
+    width: 18rem;
+  }
+
+  100% {
+    opacity: 1;
+    color: #5f458c;
+    width: 18rem;
   }
 }
