@@ -85,13 +85,11 @@
 
 @keyframes appear-btn {
   0% {
-    opacity: 1;
     color: #5f458c00;
     width: 6rem;
   }
 
   80% {
-    opacity: 1;
     color: #5f458c00;
     width: 18rem;
   }
@@ -100,5 +98,6 @@
     opacity: 1;
     color: #5f458c;
     width: 18rem;
+    visibility: initial;
   }
 }
