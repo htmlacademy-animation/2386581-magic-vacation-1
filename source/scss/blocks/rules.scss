@@ -59,6 +59,7 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.2;
+  animation: fade-in-y $medium2 $smooth-cubic-bezier both;
 
   @media (min-width: $stop-scaling) {
     margin-left: 58px;

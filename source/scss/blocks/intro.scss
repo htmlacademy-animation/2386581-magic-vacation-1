@@ -24,8 +24,10 @@
 }
 
 .intro__title {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  max-width: 99rem;
+  max-width: 110rem;
   text-transform: uppercase;
   font-family: $font-alt;
   font-weight: 400;
@@ -40,7 +42,7 @@
 
   @media (max-width: $tablet) and (orientation: portrait) {
     max-width: 100%;
-    font-size: 3.6rem;
+    font-size: 3.5rem;
   }
 
   @media (max-width: $tablet) and (orientation: landscape) {
@@ -142,6 +144,12 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.2;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 1.6s;
+
+   body.loaded .screen--intro.active & {
+    opacity: 1;
+  }
 
   @media (min-width: $stop-scaling) {
     margin: 0 0 16px;
