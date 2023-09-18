@@ -1,0 +1,20 @@
+.text__word {
+  display: inline-block;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+.text__word > span {
+  transform: translate3d(0, 100%, 0);
+  display: inline-block;
+  padding-top: 2rem;
+}
+
+.screen--intro.active .intro__title.active .text__word > span,
+.screen--intro.active .intro__date.active .text__word > span,
+.screen--story.active .slider__item-title.active .text__word > span,
+.screen--prizes.active .prizes__title.active .text__word > span,
+.screen--rules.active .rules__title.active .text__word > span,
+.screen--game.active .game__title.active .text__word > span  {
+  transform: translate3d(0, 0, 0);
+}
