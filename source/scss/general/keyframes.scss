@@ -22,47 +22,6 @@
   }
 }
 
-@keyframes form {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: calc(100% - 21rem);
-  }
-}
-
-@keyframes form-stop-scaling {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: calc(100% - 210px);
-  }
-}
-
-@keyframes form-mobile-portrait {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: calc(100% - 5rem);
-  }
-}
-
-@keyframes form-tablet {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: calc(100% - 9rem);
-  }
-}
-
-
 @keyframes appear {
   0% {
     transform: translateY(100%);
@@ -99,5 +58,88 @@
     color: #5f458c;
     width: 18rem;
     visibility: initial;
+  }
+}
+
+@keyframes appear-form {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes appear-placeholder {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flamingo-animation {
+  to {
+    transform: translateY(0.8rem) rotate(-6deg);
+  }
+}
+
+@keyframes flamingo-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes leaf-blue-2-appear {
+  20% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  40% {
+    transform: rotate(12deg);
+  }
+
+  60% {
+    transform: rotate(0);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes leaf-blue-1-appear {
+  20% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  40% {
+    transform: rotate(-12deg);
+  }
+
+  60% {
+    transform: rotate(0);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes suitcase-appear {
+  80% {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
