@@ -28,6 +28,10 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+
+  .screen--prizes & {
+    opacity: 0;
+  }
 }
 
 .screen__disclaimer {
@@ -48,9 +52,15 @@
   z-index: 1;
   transition: transform $medium cubic-bezier(0, 0, 0.13, 0.61);
   transform: translateY(100%);
+  opacity: 0;
 
   body.loaded & {
     transform: translateY(0);
+    opacity: 1;
+  }
+
+  .screen--prizes & {
+    animation: appear 550ms $long cubic-bezier(0, 0.32, 0.45, 0.99) both;
   }
 
   @media (max-width: $tablet) and (orientation: portrait) {
@@ -301,6 +311,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 
   @media (orientation: portrait) {
     background-size: auto calc(100vh - 13.8rem), 100% 25rem;
@@ -310,6 +321,7 @@
 
 .screen--prizes {
   background-color: $c-dark;
+  z-index: 3;
 }
 
 .screen--game {
@@ -368,7 +380,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    z-index: 8;
+    z-index: 2;
     background-color: $c-dark;
     animation: appear 0.4s ease-in-out forwards;
   }

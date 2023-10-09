@@ -168,6 +168,12 @@
   font-size: 2.4rem;
   line-height: 1.2;
   color: $c-light;
+  opacity: 0;
+  transition: opacity $medium ease-out $medium;
+
+  .screen--result.screen--show & {
+    opacity: 1;
+  }
 
   @media (min-width: $stop-scaling) {
     margin: auto auto 10px;
@@ -200,6 +206,14 @@
     width: 4rem;
     height: 4rem;
     color: $c-dark;
+    transform: translateX(6rem) rotate(105deg);
+    transition: transform $medium linear $medium;
+
+
+    //to ask
+    .screen--result.screen--show & {
+      transform: translateX(0) rotate(0);
+    }
 
     @media (min-width: $stop-scaling) {
       margin-left: 15px;
@@ -232,12 +246,12 @@
     }
   }
 
-  &:hover {
-    span::before {
-      width: 112.5%;
-      height: 112.5%;
-    }
-  }
+  // &:hover {
+  //   span::before {
+  //     width: 112.5%;
+  //     height: 112.5%;
+  //   }
+  // }
 
   &:focus {
     outline: none;

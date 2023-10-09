@@ -40,6 +40,18 @@
   border-radius: 50%;
   transition: color 0.4s ease-in-out;
 
+  .page-header--water & {
+    color: $secondary-light;
+  }
+
+  .page-header--ice & {
+    color: $tertiary-contrast;
+  }
+
+  .page-header--light & {
+    color: $c-dark;
+  }
+
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
   }
