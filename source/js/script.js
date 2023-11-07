@@ -9,6 +9,7 @@ import form from "./modules/form.js";
 import social from "./modules/social.js";
 import AccentTypographyBuild from "./modules/accent-typography-builder.js";
 import FullPageScroll from "./modules/full-page-scroll";
+import initSvg from "./modules/svg-loader";
 
 // init modules
 mobileHeight();
@@ -22,6 +23,8 @@ social();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
+
+initSvg(fullPageScroll.activeScreen);
 
 const introTitle = new AccentTypographyBuild(
     `.intro__title`,
@@ -87,7 +90,6 @@ setTimeout(() => {
 setTimeout(() => {
   gameTitle.runAnimation();
 }, 500);
-
 
 window.addEventListener(`load`, () => {
   const body = document.querySelector(`body`);
