@@ -1,11 +1,12 @@
 export default class AccentTypographyBuild {
-  constructor(elementSelector, timer, classForActivate, property) {
+  constructor(elementSelector, timer, classForActivate, property, delay = 0) {
     this.TIME_SPACE = 100;
 
     this._elementSelector = elementSelector;
     this._timer = timer;
     this._classForActivate = classForActivate;
     this._property = property;
+    this._delay = delay;
     this._element = document.querySelector(this._elementSelector);
     this._timeOffset = 0;
 
@@ -35,7 +36,7 @@ export default class AccentTypographyBuild {
         const up = wordOrderNumber === 0 ? 1 : 2;
         const timeOffset = this._randomInteger(100 * up, 250 * up);
 
-        span.style.transition = `${this._property} ${this._timer}ms ease ${timeOffset}ms`;
+        span.style.transition = `${this._property} ${this._timer}ms ease ${this._delay + timeOffset}ms`;
       });
     }
   }
