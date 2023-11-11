@@ -19,6 +19,10 @@ function insertByScreenId(screenId) {
         src: `img/module-3/img/secondary-award.svg`,
         target: `.prizes__icon--cases`,
       },
+      {
+        src: `img/module-3/img/additional-award.svg`,
+        target: `.prizes__icon--additional`,
+      },
     ].forEach(refreshImgCash);
   }
 }
