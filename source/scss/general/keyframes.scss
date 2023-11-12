@@ -165,3 +165,28 @@
     transform: translateX(0);
   }
 }
+
+@keyframes appear-from-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-first-prize {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(35rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

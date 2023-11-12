@@ -59,10 +59,6 @@
     opacity: 1;
   }
 
-  .screen--prizes & {
-    animation: appear 550ms $long cubic-bezier(0, 0.32, 0.45, 0.99) both;
-  }
-
   @media (max-width: $tablet) and (orientation: portrait) {
     width: 3.5rem;
     height: 3.5rem;
@@ -322,6 +318,27 @@
 .screen--prizes {
   background-color: $c-dark;
   z-index: 3;
+
+  .screen__footer {
+    animation: appear 550ms $long cubic-bezier(0, 0.32, 0.45, 0.99) both;
+  }
+
+  .prizes__lead {
+    animation: fade-in-y 1s 500ms cubic-bezier(0, 0.32, 0.45, 0.99) both;
+  }
+
+  .prizes__icon--journeys {
+    transform: translateX(35rem);
+    animation: slide-first-prize 2s 500ms cubic-bezier(0, 0.32, 0.45, 0.99) both;
+  }
+
+  .prizes__icon--cases {
+    animation: appear-from-opacity 1s 2s cubic-bezier(0, 0.32, 0.45, 0.99) both;
+  }
+
+  .prizes__icon--additional {
+    animation: fade-in-x 500ms 4s cubic-bezier(0, 0.32, 0.45, 0.99) both;
+  }
 }
 
 .screen--game {

@@ -50,7 +50,8 @@ const prizesTitle = new AccentTypographyBuild(
     `.prizes__title`,
     500,
     `active`,
-    `transform`
+    `transform`,
+    500
 );
 
 const rulesTitle = new AccentTypographyBuild(
