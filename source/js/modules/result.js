@@ -16,6 +16,7 @@ export default () => {
 
         setTimeout(() => {
           targetEl[0].classList.add(`screen--show`);
+          targetEl[0].querySelector(`svg animate`).beginElement();
         }, 32);
       });
     }
